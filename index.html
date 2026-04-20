@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xcomm — Communication Reimagined</title>
+    <meta
+      name="description"
+      content="Xcomm is a premium communication hub for announcements, live discussion, and connected communities."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="glass nav-wrap">
+      <nav class="nav container">
+        <div class="brand">Xcomm</div>
+        <ul class="nav-links">
+          <li><a href="#announcements">Announcements</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#topics">Topics</a></li>
+          <li><a href="#live">Live</a></li>
+        </ul>
+        <button class="btn btn-small">Sign In</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-lights"></div>
+        <div class="particles" id="particles"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Introducing Xcomm</p>
+          <h1>Communication at the speed of ideas.</h1>
+          <p class="tagline">
+            Premium announcements, intelligent conversations, and thriving community interaction in one futuristic platform.
+          </p>
+          <div class="hero-actions">
+            <a href="#announcements" class="btn btn-primary">Explore</a>
+            <a href="#community" class="btn btn-secondary">Join Community</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="announcements">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Announcements</p>
+            <h2>Latest updates from the Xcomm ecosystem.</h2>
+          </div>
+          <div class="announcement-grid">
+            <article class="announcement-card glass reveal">
+              <img src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?auto=format&fit=crop&w=1200&q=80" alt="Launch event" />
+              <div class="card-content">
+                <p class="date">April 15, 2026</p>
+                <h3>Xcomm Vision Keynote</h3>
+                <p>
+                  We unveiled AI-assisted community spaces, seamless threads, and immersive live updates for every user.
+                </p>
+              </div>
+            </article>
+            <article class="announcement-card glass reveal">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Security update" />
+              <div class="card-content">
+                <p class="date">April 10, 2026</p>
+                <h3>End-to-End Security Upgrade</h3>
+                <p>
+                  Enterprise-grade encryption and granular community permissions now power every conversation.
+                </p>
+              </div>
+            </article>
+            <article class="announcement-card glass reveal">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80" alt="Community creator tools" />
+              <div class="card-content">
+                <p class="date">April 5, 2026</p>
+                <h3>Creator Toolkit 2.0</h3>
+                <p>
+                  Publish announcements, schedule discussions, and automate moderation with elegant control panels.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="community">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Community</p>
+            <h2>Discuss, reply, and build momentum together.</h2>
+          </div>
+
+          <div class="community-shell glass reveal">
+            <div class="chat-header">
+              <div>
+                <h3>Community Lounge</h3>
+                <p>Live-style messages with threaded replies</p>
+              </div>
+              <span class="live-dot">Live</span>
+            </div>
+
+            <div class="conversation" id="conversation"></div>
+
+            <form class="chat-input-wrap" id="message-form">
+              <input id="message-input" type="text" placeholder="Share an announcement or idea..." maxlength="200" required />
+              <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="topics">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Featured Topics</p>
+            <h2>Navigate the conversations that matter most.</h2>
+          </div>
+          <div class="topic-grid">
+            <article class="topic-card glass reveal">
+              <span>⚡</span>
+              <h3>Product News</h3>
+              <p>Release notes, roadmap highlights, and major platform milestones.</p>
+            </article>
+            <article class="topic-card glass reveal">
+              <span>💬</span>
+              <h3>Community Voices</h3>
+              <p>User stories, feedback loops, and member-driven idea exchanges.</p>
+            </article>
+            <article class="topic-card glass reveal">
+              <span>🧠</span>
+              <h3>Innovation Lab</h3>
+              <p>AI workflows, automation, and forward-thinking communication tools.</p>
+            </article>
+            <article class="topic-card glass reveal">
+              <span>🌍</span>
+              <h3>Global Events</h3>
+              <p>Regional community sessions, online meetups, and worldwide announcements.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="live">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Live Communication</p>
+            <h2>Always-on presence with dynamic message flow.</h2>
+          </div>
+
+          <div class="live-grid">
+            <div class="glass live-panel reveal">
+              <h3>Active Users</h3>
+              <ul id="active-users"></ul>
+            </div>
+            <div class="glass live-panel reveal">
+              <h3>Live Feed</h3>
+              <div class="live-feed" id="live-feed"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 Xcomm. Crafted for connected communities.</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Support</a>
+          <a href="#">X</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
